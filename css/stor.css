@@ -1,0 +1,135 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --minColor:#65197B;
+    --lastColor:#e8d8ed;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: darkmagenta;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--lastColor);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    background-color: var(--minColor);
+  }
+
+body{
+    direction: rtl;
+}
+.countaner{
+    padding: 0 70px;
+}
+.countaner-fix{
+    padding: 70px 0 0 0;
+}
+/*-------------*/
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 2px 1px 5px var(--minColor);
+    transition: .3s all;
+}
+
+header img{
+    height: 80%;
+}
+
+
+
+header a.btn-contact{
+    font-size: 18px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: var(--minColor);
+    color: white;
+    transition: .3s all;
+}
+header a.btn-contact:hover{
+    background-color: white;
+    color: var(--minColor);
+    transform: scale(1.1);
+    border-color: var(--minColor);
+}
+
+/* end header */
+
+header span{
+    font-size: 25px;
+}
+
+.fix{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+
+}
+.fix img{
+    width: 100%;
+}
+
+.fix .slogan{
+    font-weight: bold;
+}
+.fix .slogan span{
+    color: var(--minColor);
+}
+/*-------------------*/
+
+@media(max-width:550px){
+    .countaner{
+        padding: 0 50px;
+    }
+
+    header span{
+        font-size: 20px;
+    }
+
+    header a.btn-contact{
+        font-size: 15px;
+        text-decoration: none;
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background-color: var(--minColor);
+        color: white;
+        transition: .3s all;
+    }
+
+    header img{
+        height: 50%;
+    }
+
+    .fix{
+        width: 80%;
+        text-align: center;
+        font-size: 30px;
+    
+    }
+
+}
