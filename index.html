@@ -12,9 +12,22 @@
     <title>Ottlb</title>
 </head>
 <body>
-
-    <div id="preloder"></div>
-
+    <div id="preloder">
+    <svg>
+        <g>
+          <path d="M 50,100 A 1,1 0 0 1 50,0"/>
+        </g>
+        <g>
+          <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+        </g>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#deb2eb;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
     <header class="countaner">
         <img src="img/logo.png" alt="">
         <button class="btn-nav"><i class="fa-solid fa-bars"></i></button>
@@ -227,7 +240,7 @@
         let preloder = document.getElementById("preloder");
 
         window.addEventListener("load",function(){
-            preloder.style.display="none"
+            preloder.style.display="none";
         })
     </script>
 
