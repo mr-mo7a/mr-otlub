@@ -143,10 +143,10 @@ window.onscroll = function(){
         lA4.classList.remove("Active");
         lA5.classList.add("Active");
     }
-    console.log(scrollY)
-    console.log(fr5offsetTop - 300)
-    console.log(fr5.offsetHeight) // height of frim
-    console.log(window.innerHeight) // height of frim
+    // console.log(scrollY)
+    // console.log(fr5offsetTop - 300)
+    // console.log(fr5.offsetHeight) // height of frim
+    // console.log(window.innerHeight) // height of frim
 }
 
 //------------------
